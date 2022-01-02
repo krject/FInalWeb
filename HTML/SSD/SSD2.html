@@ -28,11 +28,10 @@
     <div style="height: 0.5vh;"></div>
     <div class="content-bg">
         <div id="anchor" style="height: 7vh;"></div>
-        <div class="container">
+        <div class="container" style="height: 85vh;">
             <div class="row flex" style="align-items: flex-start;">
                 <div id="menu" class="col-md-4 block">
-                    <div class="Logo"></div>
-                    <h1 style="text-align: center;">BLUZ Studio</h1>
+                    <div class="product-Thumb" style="background-image: url('../../Img/SSD/SSD2.png');"></div>
                     <template v-for="(item, index) in menuAry">
                         <h3 v-if="index === 3">
                             <ol class="breadcrumb nowLink">
@@ -45,25 +44,27 @@
                             </ol>
                         </h3>
                     </template>
-                    <ul class="list-group">
-                        <a v-for="(item, index) in menuAry" :href="'../' + item + '/index.html'">
-                            <li class="list-group-item menu">{{ item }}</li>
-                        </a>
-                    </ul>
                 </div>
                 <div id="SSD" class="col-md-8 block">
-                    <h2 style="text-align: center;">熱門SSD推薦</h2>
-                    <div class="row">
-                        <div class="col-md-6" v-for="(descs, index) in descAry">
-                            <div class="productFrame">
-                                <a :href="'../SSD/SSD' + (index + 1) + '.html'">
-                                    <div class="Showcase"
-                                        :style="'background-image: url(../../Img/SSD/SSD' + (index + 1) + '.png);'">
-                                    </div>
-                                    <h4 class="product-desc" v-for="desc in descs">{{ desc }}</h4>
-                                </a>
-                            </div>
-                        </div>
+                    <h2 style="text-align: center;">{{ descAry[1][0] }}</h2>
+                    <div>
+                        最新推出的全球最暢銷*，三星 860 EVO SATA SSD 系列。 這款快速可靠的 SSD 專為主流 PC 和筆記型電腦而設計，採用最新的 V-NAND 技術和強大的基礎運算的控制器，具有多種兼容的外形尺寸和容量。
+                    </div>
+                    <div style="height: 1vh;"></div>
+                    <div>
+                        即使在繁重的工作量和多種任務下，傳輸速度也更加穩定。860 EVO 系列採用 智能 TurboWrite 技術，連續寫入速度最高可達520 MB/s*，連續讀取速度可達550 MB/s。 TurboWrite 緩衝區大小*從12GB升級到78GB，文件傳輸更快。
+                    </div>
+                    <div style="height: 1vh;"></div>
+                    <div>
+                        穩定地提升、安全地儲存和多媒體應用程式所使用的 4K 影像和 3D 數據，與之前的 850 EVO 相比，TBW (Terabytes 寫入) 提升到8倍* 新一代 V-NAND 技術給您高達2,400 TBW，或享有5年有限保固的保證*
+                    </div>
+                    <div style="height: 1vh;"></div>
+                    <div>
+                        受益於與主機硬體更快速，更流暢的通信。 精進的 ECC* 算法和新的 MJX 控制器可以產生更高的速度，改進後的 TRIM 陣列增強了 Linux 的兼容性。 三星先進的工程技術使 860 EVO 與您的電腦系統更加兼容。
+                    </div>
+                    <div style="height: 1vh;"></div>
+                    <div>
+                        無論您的電腦需要多大尺寸的介面，860 EVO 均有適合的介面可選擇。 介面有適用於桌上型電腦和筆記型電腦的2.5英寸尺寸，以及適用於 SATA 的 M.2（2280）或用於超薄電腦設備的 mSATA。
                     </div>
                 </div>
             </div>

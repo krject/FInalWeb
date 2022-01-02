@@ -28,13 +28,12 @@
     <div style="height: 0.5vh;"></div>
     <div class="content-bg">
         <div id="anchor" style="height: 7vh;"></div>
-        <div class="container">
+        <div class="container" style="height: 85vh;">
             <div class="row flex" style="align-items: flex-start;">
                 <div id="menu" class="col-md-4 block">
-                    <div class="Logo"></div>
-                    <h1 style="text-align: center;">BLUZ Studio</h1>
+                    <div class="product-Thumb" style="background-image: url('../../Img/Power/power2.png');"></div>
                     <template v-for="(item, index) in menuAry">
-                        <h3 v-if="index === 3">
+                        <h3 v-if="index === 4">
                             <ol class="breadcrumb nowLink">
                                 <li>
                                     <a href="../../index.html">首頁</a>
@@ -45,25 +44,35 @@
                             </ol>
                         </h3>
                     </template>
-                    <ul class="list-group">
-                        <a v-for="(item, index) in menuAry" :href="'../' + item + '/index.html'">
-                            <li class="list-group-item menu">{{ item }}</li>
-                        </a>
-                    </ul>
                 </div>
-                <div id="SSD" class="col-md-8 block">
-                    <h2 style="text-align: center;">熱門SSD推薦</h2>
-                    <div class="row">
-                        <div class="col-md-6" v-for="(descs, index) in descAry">
-                            <div class="productFrame">
-                                <a :href="'../SSD/SSD' + (index + 1) + '.html'">
-                                    <div class="Showcase"
-                                        :style="'background-image: url(../../Img/SSD/SSD' + (index + 1) + '.png);'">
-                                    </div>
-                                    <h4 class="product-desc" v-for="desc in descs">{{ desc }}</h4>
-                                </a>
-                            </div>
-                        </div>
+                <div id="Power" class="col-md-8 block">
+                    <h2 style="text-align: center;">{{ descAry[1][0] }}</h2>
+                    <div>
+                        電容器和電感器皆通過嚴格測試以達到軍規等級認證
+                    </div>
+                    <div style="height: 1vh;"></div>
+                    <div>
+                        雙滾珠軸承設計的使用壽命可達一般油封軸承設計風扇的兩倍。
+                    </div>
+                    <div style="height: 1vh;"></div>
+                    <div>
+                        保護性電路板塗層可保護以對抗溼氣、灰塵及極端溫度。
+                    </div>
+                    <div style="height: 1vh;"></div>
+                    <div>
+                        80 Plus 銅牌認證：通過嚴苛測試的高品質組件。
+                    </div>
+                    <div style="height: 1vh;"></div>
+                    <div>
+                        軸向式風扇設計：具備較小的風扇輪轂以使用更長的葉片，阻隔環則可提高向下風壓。
+                    </div>
+                    <div style="height: 1vh;"></div>
+                    <div>
+                        0dB 技術可讓您在相對較安靜的環境中享受輕量的遊戲。
+                    </div>
+                    <div style="height: 1vh;"></div>
+                    <div>
+                        包覆線材讓您的裝備擁有簡潔的戰鬥外觀。
                     </div>
                 </div>
             </div>

@@ -188,6 +188,14 @@ a:visited {
     text-align: center;
 }
 
+.product-Thumb{
+    height: 30vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-top: 2vh;
+}
+
 .Showcase{
     height: 35vh;
     background-repeat: no-repeat;

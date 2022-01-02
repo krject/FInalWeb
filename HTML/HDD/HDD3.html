@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/vue@next"></script>
+    <link rel="stylesheet" href="../../lib/main.css">
+    <title>BLUZ Studio工作室</title>
+</head>
+
+<body>
+    <nav id="head_child" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container-fluid flex flex-center-main">
+            <div class="navbar-header">
+                <img src="../../Img/LogoW.png" class="navbar-brand" style="padding: 0;" />
+            </div>
+            <div class="navbar-header" v-for="(title, index) in titleAry">
+                <a class="navbar-brand title-active" :href="linkAry[index]" :target="targetAry[index]"
+                    v-if="index === 2">{{ title }}</a>
+                <a class="navbar-brand title" :href="linkAry[index]" :target="targetAry[index]" v-else>{{ title }}</a>
+            </div>
+        </div>
+    </nav>
+    <div style="height: 0.5vh;"></div>
+    <div class="content-bg">
+        <div id="anchor" style="height: 7vh;"></div>
+        <div class="container" style="height: 85vh;">
+            <div class="row flex" style="align-items: flex-start;">
+                <div id="menu" class="col-md-4 block">
+                    <div class="product-Thumb" style="background-image: url('../../Img/HDD/HDD3.png');"></div>
+                    <template v-for="(item, index) in menuAry">
+                        <h3 v-if="index === 2">
+                            <ol class="breadcrumb nowLink">
+                                <li>
+                                    <a href="../../index.html">首頁</a>
+                                </li>
+                                <li>
+                                    <a :href="'../' + item + '/index.html'">{{ item }}</a>
+                                </li>
+                            </ol>
+                        </h3>
+                    </template>
+                </div>
+                <div id="HDD" class="col-md-8 block">
+                    <h2 style="text-align: center;">{{ descAry[2][0] }}</h2>
+                    <div>
+                        WD_Black™ D10 Game Drive 可以使您的主機或 PC 進一步升級，讓您在勝利的道路上如虎添翼。為您的裝置新增 8TB1 的額外儲存空間，建立一個最多包含 200 款遊戲的遊戲庫，3或者透過儲存您最愛的遊戲錄像，來重溫您的最佳瞬間。WD_Black™ D10 Game Drive 採用主動散熱技術，達到 7200RPM 等級，傳輸速率高達 250MB/s2，能夠以高效能模式運行您的遊戲，因此您可以隨心所欲、無限暢玩。
+                    </div>
+                    <div style="height: 1vh;"></div>
+                    <div>
+                        得益於 WD_Black™ D10 Game Drive 的 8TB1 額外儲存空間，無須浪費時間為新遊戲清理主機或 PC 上的空間，現在，您可以在擴充遊戲庫的同時，完好地保留您的「舊愛」。得益於額外儲存空間，可以更加輕鬆地擷取和收集您最具紀念意義的遊戲畫面，來重溫您的最佳遊戲影片，並將其與全世界分享。
+                    </div>
+                    <div style="height: 1vh;"></div>
+                    <div>
+                        WD_Black™ D10 Game Drive4 傳輸速率 250MB/s2 並達到 7200RPM 等級，讓您可以快速暢玩遊戲。從遊戲玩家的角度出發精心打造，採用內嵌式主動散熱技術，有助於控制溫度，降低故障風險，從而獲取最佳化遊戲體驗。
+                    </div>
+                    <div style="height: 1vh;"></div>
+                    <div>
+                        WD_Black™ D10 Game Drive 配備 7.5W USB Type-A 充電連接埠，能夠更加方便地為您的遊戲設備和配件充電。經過精心打造，可垂直或水平擺放，您的遊戲設定可讓您的裝置隨時充滿電，並為戰鬥做好準備。
+                    </div>
+                    <div style="height: 1vh;"></div>
+                    <div>
+                        試驗證明，遊戲玩家們完全信任 WD_Black™ 及其提供的儲存能力。WD_Black™ 的使命非常簡單：做一個致力於儲存和提升您的遊戲的品牌。WD_Black™ D10 Game Drive 可以為您提供可靠性、擴充性和最佳化的速度提升，並且享有 3 年有限保固，您可以放心，在您追求卓越的影片遊戲體驗時，其將為您提供足夠的支援。
+                    </div>
+                    <div style="height: 1vh;"></div>
+                    <div>
+                        WD_Black™ 在頂級儲存空間的擴充性和效能方面突破了常規。WD_Black™ D10 Game Drive 專為遊戲玩家而打造，能夠為您的主機和 PC 提供值得信賴的可靠效能提升和所需的容量，讓您可以拋開硬體煩惱，盡情去爭取勝利。WD_Black™ 是您的堅強後援。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row footer">
+        <div class="col-md-4 col-md-offset-2">
+            <div class="flex">
+                <div>版權宣告&emsp;</div>
+            </div>
+        </div>
+        <div class="col-md-4 col-md-offset-2">
+            <div>Copyright © 2022 krject. All rights reserved.</div>
+        </div>
+    </div>
+    <script src="../../lib/main.js"></script>
+</body>

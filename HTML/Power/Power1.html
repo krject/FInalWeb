@@ -28,13 +28,12 @@
     <div style="height: 0.5vh;"></div>
     <div class="content-bg">
         <div id="anchor" style="height: 7vh;"></div>
-        <div class="container">
+        <div class="container" style="height: 85vh;">
             <div class="row flex" style="align-items: flex-start;">
                 <div id="menu" class="col-md-4 block">
-                    <div class="Logo"></div>
-                    <h1 style="text-align: center;">BLUZ Studio</h1>
+                    <div class="product-Thumb" style="background-image: url('../../Img/Power/power1.png');"></div>
                     <template v-for="(item, index) in menuAry">
-                        <h3 v-if="index === 3">
+                        <h3 v-if="index === 4">
                             <ol class="breadcrumb nowLink">
                                 <li>
                                     <a href="../../index.html">首頁</a>
@@ -45,25 +44,39 @@
                             </ol>
                         </h3>
                     </template>
-                    <ul class="list-group">
-                        <a v-for="(item, index) in menuAry" :href="'../' + item + '/index.html'">
-                            <li class="list-group-item menu">{{ item }}</li>
-                        </a>
-                    </ul>
                 </div>
-                <div id="SSD" class="col-md-8 block">
-                    <h2 style="text-align: center;">熱門SSD推薦</h2>
-                    <div class="row">
-                        <div class="col-md-6" v-for="(descs, index) in descAry">
-                            <div class="productFrame">
-                                <a :href="'../SSD/SSD' + (index + 1) + '.html'">
-                                    <div class="Showcase"
-                                        :style="'background-image: url(../../Img/SSD/SSD' + (index + 1) + '.png);'">
-                                    </div>
-                                    <h4 class="product-desc" v-for="desc in descs">{{ desc }}</h4>
-                                </a>
-                            </div>
-                        </div>
+                <div id="Power" class="col-md-8 block">
+                    <h2 style="text-align: center;">{{ descAry[0][0] }}</h2>
+                    <div>
+                        CX-F RGB電源通過八顆獨立可尋址的RGB LED燈為您點亮PC內部，採用全模塊化線纜，便於管理。
+                    </div>
+                    <div style="height: 1vh;"></div>
+                    <div>
+                        每個CX-F RGB電源都配備了帶有明亮燈光的120mm RGB風扇，風扇帶有八顆獨立可尋址的RGB LED燈，讓您外觀出眾的系統更加奪目。
+                    </div>
+                    <div style="height: 1vh;"></div>
+                    <div>
+                        按下背面的按鈕，連接到CORSAIR iCUE RGB燈光控制器（單獨出售），或使用主板的內置ARGB控件和隨附的適配器電纜。隨心所欲地控制燈光。
+                    </div>
+                    <div style="height: 1vh;"></div>
+                    <div>
+                        CORSAIR CX-F RGB Series全模塊化電源可為您的系統提供可靠的80 PLUS Bronze高效能耗，並且只需要使用必不可少的線纜，為您打造整潔裝備。
+                    </div>
+                    <div style="height: 1vh;"></div>
+                    <div>
+                        CX-F配備了經過精細調整的120mm RGB風扇，採用專用風扇曲線，確保噪音處於較低水平。
+                    </div>
+                    <div style="height: 1vh;"></div>
+                    <div>
+                        為了獲得一致的可靠電源和出色的電氣性能，每個CX-F RGB電源均配備了帶有DC-DC轉換電路的強勁LLC拓撲結構，以及105°C級100％日本初級電容器。支持Microsoft Modern Standby，可實現睡眠狀態下超快喚醒，低負載情況下的效率更高。
+                    </div>
+                    <div style="height: 1vh;"></div>
+                    <div>
+                        全模塊化
+                    </div>
+                    <div style="height: 1vh;"></div>
+                    <div>
+                        體積小巧的140 MM機箱
                     </div>
                 </div>
             </div>

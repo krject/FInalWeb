@@ -28,13 +28,12 @@
     <div style="height: 0.5vh;"></div>
     <div class="content-bg">
         <div id="anchor" style="height: 7vh;"></div>
-        <div class="container">
+        <div class="container" style="height: 85vh;">
             <div class="row flex" style="align-items: flex-start;">
                 <div id="menu" class="col-md-4 block">
-                    <div class="Logo"></div>
-                    <h1 style="text-align: center;">BLUZ Studio</h1>
+                    <div class="product-Thumb" style="background-image: url('../../Img/MB/MB4.jpg');"></div>
                     <template v-for="(item, index) in menuAry">
-                        <h3 v-if="index === 3">
+                        <h3 v-if="index === 5">
                             <ol class="breadcrumb nowLink">
                                 <li>
                                     <a href="../../index.html">首頁</a>
@@ -45,25 +44,33 @@
                             </ol>
                         </h3>
                     </template>
-                    <ul class="list-group">
-                        <a v-for="(item, index) in menuAry" :href="'../' + item + '/index.html'">
-                            <li class="list-group-item menu">{{ item }}</li>
-                        </a>
-                    </ul>
                 </div>
-                <div id="SSD" class="col-md-8 block">
-                    <h2 style="text-align: center;">熱門SSD推薦</h2>
-                    <div class="row">
-                        <div class="col-md-6" v-for="(descs, index) in descAry">
-                            <div class="productFrame">
-                                <a :href="'../SSD/SSD' + (index + 1) + '.html'">
-                                    <div class="Showcase"
-                                        :style="'background-image: url(../../Img/SSD/SSD' + (index + 1) + '.png);'">
-                                    </div>
-                                    <h4 class="product-desc" v-for="desc in descs">{{ desc }}</h4>
-                                </a>
-                            </div>
-                        </div>
+                <div id="MB" class="col-md-8 block">
+                    <h2 style="text-align: center;">{{ descAry[3][0] }}</h2>
+                    <div>
+                        領先業界的 5重防護 II採用頂級組件、絕佳電路設計以及嚴苛標準，以全方位防護保證主機板的品質與長期耐用性。
+                        這代表您的電腦具備卓越的防護力及穩定度，也是世界領先主機板品牌以數十年製造經驗所提供的智慧結晶。
+                    </div>
+                    <div style="height: 1vh;"></div>
+                    <div>
+                        ASUS LANGuard 是一種硬體層級網路保護，運用訊號耦合技術與優質的抗 EMI
+                        表面貼裝電容確保更可靠的連線和更高的傳輸量，靜電保護與突波防護元件則可提供更佳的靜電耐受性及更強的突波防護。
+                    </div>
+                    <div style="height: 1vh;"></div>
+                    <div>
+                        獨家的電路設計內建電壓調節器，可避免因供電不穩或不良而突然產生的高電壓損壞晶片組、連接埠和音訊轉碼器。
+                    </div>
+                    <div style="height: 1vh;"></div>
+                    <div>
+                        內建可復式保險絲能夠防止過電流和短路損壞。 此設計通過 I/O 連接埠並延伸至 DRAM，可維護系統和連接裝置的使用壽命。
+                    </div>
+                    <div style="height: 1vh;"></div>
+                    <div>
+                        ASUS 獨家 DIGI+ VRM 以智慧化方式依即時需求提供電力至處理器，減少能源浪費之餘，也提升了系統穩定性。
+                    </div>
+                    <div style="height: 1vh;"></div>
+                    <div>
+                        抗腐蝕不鏽鋼背面 I/O 面板以氧化鉻黏合，使用壽命比一般面板長三倍 (3X)。
                     </div>
                 </div>
             </div>

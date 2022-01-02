@@ -28,13 +28,12 @@
     <div style="height: 0.5vh;"></div>
     <div class="content-bg">
         <div id="anchor" style="height: 7vh;"></div>
-        <div class="container">
+        <div class="container" style="height: 85vh;">
             <div class="row flex" style="align-items: flex-start;">
                 <div id="menu" class="col-md-4 block">
-                    <div class="Logo"></div>
-                    <h1 style="text-align: center;">BLUZ Studio</h1>
+                    <div class="product-Thumb" style="background-image: url('../../Img/CPU/CPU5.png');"></div>
                     <template v-for="(item, index) in menuAry">
-                        <h3 v-if="index === 3">
+                        <h3 v-if="index === 0">
                             <ol class="breadcrumb nowLink">
                                 <li>
                                     <a href="../../index.html">首頁</a>
@@ -45,25 +44,28 @@
                             </ol>
                         </h3>
                     </template>
-                    <ul class="list-group">
-                        <a v-for="(item, index) in menuAry" :href="'../' + item + '/index.html'">
-                            <li class="list-group-item menu">{{ item }}</li>
-                        </a>
-                    </ul>
                 </div>
-                <div id="SSD" class="col-md-8 block">
-                    <h2 style="text-align: center;">熱門SSD推薦</h2>
-                    <div class="row">
-                        <div class="col-md-6" v-for="(descs, index) in descAry">
-                            <div class="productFrame">
-                                <a :href="'../SSD/SSD' + (index + 1) + '.html'">
-                                    <div class="Showcase"
-                                        :style="'background-image: url(../../Img/SSD/SSD' + (index + 1) + '.png);'">
-                                    </div>
-                                    <h4 class="product-desc" v-for="desc in descs">{{ desc }}</h4>
-                                </a>
-                            </div>
-                        </div>
+                <div id="CPU" class="col-md-8 block">
+                    <h2 style="text-align: center;">{{ descAry[4][0] }}</h2>
+                    <h4>使用第 11 代 Intel® Core™ 處理器，成就更多您在乎的事</h4>
+                    <div>
+                        第 11 代 Intel® Core™ 處理器重新定義 Intel® CPU 在筆記型電腦和桌上型電腦的效能。全新核心與顯示晶片架構、人工智慧支援的效能提升、同級最佳無線和有線連線能力1，以及進階調校功能2，提供更強大的威力與更順暢的流程，支援您達成目標。
+                    </div>
+                    <div style="height: 1vh;"></div>
+                    <div>
+                        搭載 Intel® Iris® Xe 顯示晶片的25 瓦第 11 代 Intel® Core™ U 系列筆記型電腦處理器，提供獨立層級的整合式顯示晶片以及 Intel® Wi-Fi 6 ，以在輕薄筆記型電腦中突破效能界限，提供日常使用。功率更高的 35 瓦第 11 代 Intel® Core™ H 系列筆記型處理器，為電競與創作引進超方便攜帶的強大效能。
+                    </div>
+                    <div style="height: 1vh;"></div>
+                    <div>
+                        第 11 代 Intel® Core™ S 系列桌上型處理器為日常桌上型電腦使用者、遊戲愛好者與熱衷創作者提供更高的效能。Intel® Deep Learning Boost，最高 DDR4-3200、20 CPU PCIe 4.0 通道、整合式 USB 3.2 20 G、以 Intel® Xe 架構為基礎增強 UHD 顯示晶片，以及更優異的調校能力與擴充性，可大幅提升效能與控制。不鎖頻的第 11 代 Intel® Core™ 桌上型處理器型號提供精英電競和重度創作所需的高效能超頻功能。
+                    </div>
+                    <div style="height: 1vh;"></div>
+                    <div>
+                        第 11 代 Intel® Core™ vPro® 處理器專為企業打造，提供第 11 代的所有效能優勢，以及現代 IT 的遠端管理功能。符合現今世界隨處工作的需求。
+                    </div>
+                    <div style="height: 1vh;"></div>
+                    <div>
+                        提供眾多不同的 CPU 型號，針對不同等級的電競、創作、商務和日常使用最佳化，第 11 代 Intel® Core™ 筆記型電腦或桌上型處理器，旨在成就更多您在乎的事。
                     </div>
                 </div>
             </div>

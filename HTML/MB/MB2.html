@@ -28,13 +28,12 @@
     <div style="height: 0.5vh;"></div>
     <div class="content-bg">
         <div id="anchor" style="height: 7vh;"></div>
-        <div class="container">
+        <div class="container" style="height: 85vh;">
             <div class="row flex" style="align-items: flex-start;">
                 <div id="menu" class="col-md-4 block">
-                    <div class="Logo"></div>
-                    <h1 style="text-align: center;">BLUZ Studio</h1>
+                    <div class="product-Thumb" style="background-image: url('../../Img/MB/MB2.jpg');"></div>
                     <template v-for="(item, index) in menuAry">
-                        <h3 v-if="index === 3">
+                        <h3 v-if="index === 5">
                             <ol class="breadcrumb nowLink">
                                 <li>
                                     <a href="../../index.html">首頁</a>
@@ -45,25 +44,44 @@
                             </ol>
                         </h3>
                     </template>
-                    <ul class="list-group">
-                        <a v-for="(item, index) in menuAry" :href="'../' + item + '/index.html'">
-                            <li class="list-group-item menu">{{ item }}</li>
-                        </a>
-                    </ul>
                 </div>
-                <div id="SSD" class="col-md-8 block">
-                    <h2 style="text-align: center;">熱門SSD推薦</h2>
-                    <div class="row">
-                        <div class="col-md-6" v-for="(descs, index) in descAry">
-                            <div class="productFrame">
-                                <a :href="'../SSD/SSD' + (index + 1) + '.html'">
-                                    <div class="Showcase"
-                                        :style="'background-image: url(../../Img/SSD/SSD' + (index + 1) + '.png);'">
-                                    </div>
-                                    <h4 class="product-desc" v-for="desc in descs">{{ desc }}</h4>
-                                </a>
-                            </div>
-                        </div>
+                <div id="MB" class="col-md-8 block">
+                    <h2 style="text-align: center;">{{ descAry[1][0] }}</h2>
+                    <div>
+                        支援 LGA 1700 腳位的第 12 代 Intel® Core™/ Pentium® Celeron® 處理器。
+                    </div>
+                    <div style="height: 1vh;"></div>
+                    <div>
+                        支援 DDR5 記憶體，高達 6666+(OC) MHz
+                    </div>
+                    <div style="height: 1vh;"></div>
+                    <div>
+                        閃電極速遊戲體驗： PCIe 5.0插槽, Lightning Gen4 x4 M.2, USB 3.2 Gen 2x2
+                    </div>
+                    <div style="height: 1vh;"></div>
+                    <div>
+                        電源強化設計：直出 18+1+1 供電項數、雙 8-pin CPU 電源供應、Core Boost、Memory Boost
+                    </div>
+                    <div style="height: 1vh;"></div>
+                    <div>
+                        優質散熱解決方案 : 附加導熱管的延伸式散熱片、7W/mK MOSFET 散熱墊、擁有額外電容的散熱墊和 M.2 Shield Frozr ，打造高性能和不間斷遊戲體驗的系統。
+                    </div>
+                    <div style="height: 1vh;"></div>
+                    <div>
+                        MYSTIC LIGHT : 透過Mystic Light RGB 軟體，可一鍵控制1680萬種顏色和奇艷效果。 MYSTIC LIGHT 擴充插槽可支援RGB、RAINBOW、
+                        Corsair LED 燈條和 Ambient設備。
+                    </div>
+                    <div style="height: 1vh;"></div>
+                    <div>
+                        帶有頻寬管理系統 2.5G LAN 採用最新 Intel Wi-Fi 6E :針對專業工作者與娛樂創作者需求，升級網路解決方案，提供更安全、穩定、快速的連線體驗。
+                    </div>
+                    <div style="height: 1vh;"></div>
+                    <div>
+                        AUDIO BOOST 5: 採用高品質ALC 4080 音效處理器和專用放大器，與主板其他零組件線路隔離，提供最身臨其境的遊戲體驗。
+                    </div>
+                    <div style="height: 1vh;"></div>
+                    <div>
+                        高品質PCB: 採用內含 2oz 厚度銅的 8 層伺服器等級PCB 。
                     </div>
                 </div>
             </div>

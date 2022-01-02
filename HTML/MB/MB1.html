@@ -28,11 +28,10 @@
     <div style="height: 0.5vh;"></div>
     <div class="content-bg">
         <div id="anchor" style="height: 7vh;"></div>
-        <div class="container">
+        <div class="container" style="height: 85vh;">
             <div class="row flex" style="align-items: flex-start;">
                 <div id="menu" class="col-md-4 block">
-                    <div class="Logo"></div>
-                    <h1 style="text-align: center;">BLUZ Studio</h1>
+                    <div class="product-Thumb" style="background-image: url('../../Img/MB/MB1.jpg');"></div>
                     <template v-for="(item, index) in menuAry">
                         <h3 v-if="index === 5">
                             <ol class="breadcrumb nowLink">
@@ -45,25 +44,43 @@
                             </ol>
                         </h3>
                     </template>
-                    <ul class="list-group">
-                        <a v-for="(item, index) in menuAry" :href="'../' + item + '/index.html'">
-                            <li class="list-group-item menu">{{ item }}</li>
-                        </a>
-                    </ul>
                 </div>
                 <div id="MB" class="col-md-8 block">
-                    <h2 style="text-align: center;">熱門主機版推薦</h2>
-                    <div class="row">
-                        <div class="col-md-6" v-for="(descs, index) in descAry">
-                            <div class="productFrame">
-                                <a :href="'../MB/MB' + (index + 1) + '.html'">
-                                    <div class="Showcase"
-                                        :style="'background-image: url(../../Img/MB/MB' + (index + 1) + '.jpg);'">
-                                    </div>
-                                    <h4 class="product-desc" v-for="desc in descs">{{ desc }}</h4>
-                                </a>
-                            </div>
-                        </div>
+                    <h2 style="text-align: center;">{{ descAry[0][0] }}</h2>
+                    <div>
+                        Intel® Z690 ATX 主機板配備 24+1 個功率級、DDR5 和 OptiMem II、五個 M.2、USB 3.2 Gen 2x2 前面板連接器支援 Quick Charge 4+、雙 Thunderbolt™ 4、PCIe® 5.0、內建 WiFi 6E 及 Aura Sync RGB 燈光效果
+                    </div>
+                    <div style="height: 1vh;"></div>
+                    <div>
+                        Socket LGA1700 適用於第 12 代 Intel® Core™、Pentium® Gold 及 Celeron® 處理器
+                    </div>
+                    <div style="height: 1vh;"></div>
+                    <div>
+                        智慧控制：ASUS 獨家工具，包括 AI 超頻、AI 散熱、AI 網路及雙向 AI 降噪，以簡化配置作業  
+                    </div>
+                    <div style="height: 1vh;"></div>
+                    <div>
+                        強大的電源解決方案：額定 105A 的 24+1 個整合式功率級、ProCool II 電源連接器、MicroFine 合金電感及頂級金屬電容
+                    </div>
+                    <div style="height: 1vh;"></div>
+                    <div>
+                        最佳化散熱設計：配備冷鍛式散熱器、加大 VRM 散熱器，搭配整合的鋁質 I/O 外蓋；以及高導熱散熱墊和五個 M.2 散熱器，含雙嵌入式背板和 ROG 水冷區域。
+                    </div>
+                    <div style="height: 1vh;"></div>
+                    <div>
+                        高效能網路：內建 WiFi 6E、Marvell® AQtion 10Gb、Intel® 2.5 Gb 乙太網路，以及 ASUS LANGaurd。
+                    </div>
+                    <div style="height: 1vh;"></div>
+                    <div>
+                        最快速遊戲連線功能：PCIe® 5.0、Gen 5 M.2 插槽、USB 3.2 Gen 2x2 前面板連接器支援 Thunderbolt™ 4、背面三個 USB Type-C® 連接埠。
+                    </div>
+                    <div style="height: 1vh;"></div>
+                    <div>
+                        領先業界的沉浸式音效：ROG SupremeFX ALC4082 codec 含 ESS® ES9018Q2C DAC 以提供高傳真音訊
+                    </div>
+                    <div style="height: 1vh;"></div>
+                    <div>
+                        無可比擬的個人化：AniMe Matrix™ LED 顯示器、2 吋 LiveDash OLED 面板、ASUS 獨家 Aura Sync RGB 燈光效果，包括一個 RGB 接頭和三個可定址 Gen 2 RGB 接頭
                     </div>
                 </div>
             </div>

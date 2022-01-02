@@ -28,13 +28,12 @@
     <div style="height: 0.5vh;"></div>
     <div class="content-bg">
         <div id="anchor" style="height: 7vh;"></div>
-        <div class="container">
+        <div class="container" style="height: 85vh;">
             <div class="row flex" style="align-items: flex-start;">
                 <div id="menu" class="col-md-4 block">
-                    <div class="Logo"></div>
-                    <h1 style="text-align: center;">BLUZ Studio</h1>
+                    <div class="product-Thumb" style="background-image: url('../../Img/CPU/CPU6.png');"></div>
                     <template v-for="(item, index) in menuAry">
-                        <h3 v-if="index === 3">
+                        <h3 v-if="index === 0">
                             <ol class="breadcrumb nowLink">
                                 <li>
                                     <a href="../../index.html">首頁</a>
@@ -45,25 +44,30 @@
                             </ol>
                         </h3>
                     </template>
-                    <ul class="list-group">
-                        <a v-for="(item, index) in menuAry" :href="'../' + item + '/index.html'">
-                            <li class="list-group-item menu">{{ item }}</li>
-                        </a>
-                    </ul>
                 </div>
-                <div id="SSD" class="col-md-8 block">
-                    <h2 style="text-align: center;">熱門SSD推薦</h2>
-                    <div class="row">
-                        <div class="col-md-6" v-for="(descs, index) in descAry">
-                            <div class="productFrame">
-                                <a :href="'../SSD/SSD' + (index + 1) + '.html'">
-                                    <div class="Showcase"
-                                        :style="'background-image: url(../../Img/SSD/SSD' + (index + 1) + '.png);'">
-                                    </div>
-                                    <h4 class="product-desc" v-for="desc in descs">{{ desc }}</h4>
-                                </a>
-                            </div>
-                        </div>
+                <div id="CPU" class="col-md-8 block">
+                    <h2 style="text-align: center;">{{ descAry[5][0] }}</h2>
+                    <h4>最快的遊戲處理器</h4>
+                    <h4>有 6 個效能強勁的核心，適合只想玩遊戲的人。</h4>
+                    <div>
+                        無論是玩遊戲還是進行創作，AMD Ryzen™ 處理器均可提供頂極的效能。
+                    </div>
+                    <div style="height: 1vh;"></div>
+                    <div>
+                        AMD Ryzen™ 5000 系列處理器為下一代要求苛刻的遊戲提供動力，提供了最佳身臨其境的體驗，並可以支配 3D 和視訊渲染3及軟體編譯等多執行緒任務。
+                    </div>
+                    <div style="height: 1vh;"></div>
+                    <div>
+                        AMD Ryzen™ 5000 G 系列處理器擁有桌上型電腦處理器所擁有的最快圖形效能4，或與顯示卡結合使用來為您的遊戲效能提供強勁動力。
+                    </div>
+                    <div style="height: 1vh;"></div>
+                    <h4>最新技術</h4>
+                    <div>
+                        AMD Ryzen™處理器具有讓您在遊戲中身入其境的所有最佳功能。
+                    </div>
+                    <div style="height: 1vh;"></div>
+                    <div>
+                        強大的處理能力帶來了最前沿的技術支援。 所有 AMD Ryzen™ 5000 系列處理器均具有旨在提高 PC 處理能力的全套技術，包括精度提升24、精度強化超頻5、精選處理器上的 PCIe® 4.0 與可調大小的 BAR。
                     </div>
                 </div>
             </div>

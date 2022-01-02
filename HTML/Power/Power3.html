@@ -28,13 +28,12 @@
     <div style="height: 0.5vh;"></div>
     <div class="content-bg">
         <div id="anchor" style="height: 7vh;"></div>
-        <div class="container">
+        <div class="container" style="height: 85vh;">
             <div class="row flex" style="align-items: flex-start;">
                 <div id="menu" class="col-md-4 block">
-                    <div class="Logo"></div>
-                    <h1 style="text-align: center;">BLUZ Studio</h1>
+                    <div class="product-Thumb" style="background-image: url('../../Img/Power/power3.png');"></div>
                     <template v-for="(item, index) in menuAry">
-                        <h3 v-if="index === 3">
+                        <h3 v-if="index === 4">
                             <ol class="breadcrumb nowLink">
                                 <li>
                                     <a href="../../index.html">首頁</a>
@@ -45,25 +44,47 @@
                             </ol>
                         </h3>
                     </template>
-                    <ul class="list-group">
-                        <a v-for="(item, index) in menuAry" :href="'../' + item + '/index.html'">
-                            <li class="list-group-item menu">{{ item }}</li>
-                        </a>
-                    </ul>
                 </div>
-                <div id="SSD" class="col-md-8 block">
-                    <h2 style="text-align: center;">熱門SSD推薦</h2>
-                    <div class="row">
-                        <div class="col-md-6" v-for="(descs, index) in descAry">
-                            <div class="productFrame">
-                                <a :href="'../SSD/SSD' + (index + 1) + '.html'">
-                                    <div class="Showcase"
-                                        :style="'background-image: url(../../Img/SSD/SSD' + (index + 1) + '.png);'">
-                                    </div>
-                                    <h4 class="product-desc" v-for="desc in descs">{{ desc }}</h4>
-                                </a>
-                            </div>
-                        </div>
+                <div id="Power" class="col-md-8 block">
+                    <h2 style="text-align: center;">{{ descAry[2][0] }}</h2>
+                    <div>
+                        提供AUTO+兩段式 ECO(高溫啟動跟低溫啟動) 風扇管理系統
+                    </div>
+                    <div style="height: 1vh;"></div>
+                    <div>
+                        最新EuP 技術（改進 5V/SB 效率,待機消耗低於1瓦）
+                    </div>
+                    <div style="height: 1vh;"></div>
+                    <div>
+                        擁有2段式OPP，針對不同需求使用者提供更周詳的保護
+                    </div>
+                    <div style="height: 1vh;"></div>
+                    <div>
+                        在50℃操作溫度下，能連續7天24小時滿載不間斷輸出
+                    </div>
+                    <div style="height: 1vh;"></div>
+                    <div>
+                        全系列支援最新Intel和AMD多核心晶片組與其相容主機板
+                    </div>
+                    <div style="height: 1vh;"></div>
+                    <div>
+                        支援PCIe 8PIN與PCIe 6PIN接頭，可相容於各廠牌之顯卡電源接座
+                    </div>
+                    <div style="height: 1vh;"></div>
+                    <div>
+                        符合歐盟EuP(Energy-using Products)指令/美國能源之星(Energy Star)標準
+                    </div>
+                    <div style="height: 1vh;"></div>
+                    <div>
+                        多重獨立保護設計：多重獨立保護設計：過電壓保護 / 過電流保護 / 過溫度保護 / 短路保護 / 低電壓保護 / 兩段式 過負載保護 /  無負載保護 / 抗湧浪保護 
+                    </div>
+                    <div style="height: 1vh;"></div>
+                    <div>
+                        提供多樣化彈性選擇，全面強化線材配置管理
+                    </div>
+                    <div style="height: 1vh;"></div>
+                    <div>
+                        OCP與動態偏載優化
                     </div>
                 </div>
             </div>

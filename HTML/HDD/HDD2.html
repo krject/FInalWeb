@@ -28,13 +28,12 @@
     <div style="height: 0.5vh;"></div>
     <div class="content-bg">
         <div id="anchor" style="height: 7vh;"></div>
-        <div class="container">
+        <div class="container" style="height: 85vh;">
             <div class="row flex" style="align-items: flex-start;">
                 <div id="menu" class="col-md-4 block">
-                    <div class="Logo"></div>
-                    <h1 style="text-align: center;">BLUZ Studio</h1>
+                    <div class="product-Thumb" style="background-image: url('../../Img/HDD/HDD2.png');"></div>
                     <template v-for="(item, index) in menuAry">
-                        <h3 v-if="index === 3">
+                        <h3 v-if="index === 2">
                             <ol class="breadcrumb nowLink">
                                 <li>
                                     <a href="../../index.html">首頁</a>
@@ -45,25 +44,27 @@
                             </ol>
                         </h3>
                     </template>
-                    <ul class="list-group">
-                        <a v-for="(item, index) in menuAry" :href="'../' + item + '/index.html'">
-                            <li class="list-group-item menu">{{ item }}</li>
-                        </a>
-                    </ul>
                 </div>
-                <div id="SSD" class="col-md-8 block">
-                    <h2 style="text-align: center;">熱門SSD推薦</h2>
-                    <div class="row">
-                        <div class="col-md-6" v-for="(descs, index) in descAry">
-                            <div class="productFrame">
-                                <a :href="'../SSD/SSD' + (index + 1) + '.html'">
-                                    <div class="Showcase"
-                                        :style="'background-image: url(../../Img/SSD/SSD' + (index + 1) + '.png);'">
-                                    </div>
-                                    <h4 class="product-desc" v-for="desc in descs">{{ desc }}</h4>
-                                </a>
-                            </div>
-                        </div>
+                <div id="HDD" class="col-md-8 block">
+                    <h2 style="text-align: center;">{{ descAry[1][0] }}</h2>
+                    <div>
+                        硬碟搭配固態硬碟，讓您的桌上型電腦既提升效能又增加儲存容量，進而有效提高資料存取速度。WD Blue 最多可以額外增加 6TB 儲存容量。
+                    </div>
+                    <div style="height: 1vh;"></div>
+                    <div>
+                        更好的技術帶來更大的儲存需求。若數位攝影機 以 4K 的解析度和每秒 30 個影格的速率來記錄超高畫質影片，將會需要極大的儲存空間。使用我們的 6TB 硬碟處理所有這些媒體易如反掌。
+                    </div>
+                    <div style="height: 1vh;"></div>
+                    <div>
+                        Acronis True Image WD Edition 軟體（可免費下載）可以複製硬碟，並備份您的作業系統、應用程式、設定和所有資料。
+                    </div>
+                    <div style="height: 1vh;"></div>
+                    <div>
+                        WD Blue 硬碟經過精心設計和測試，經久耐用，而且隨附 2 年保固服務，能提供出色的可靠性。
+                    </div>
+                    <div style="height: 1vh;"></div>
+                    <div>
+                        NoTouch 磁碟表面停放技術可安全地放置記錄磁頭，使其離開 磁碟表面，以協助保護您的資料。
                     </div>
                 </div>
             </div>
