@@ -1,0 +1,224 @@
+html {
+    background-color: rgb(51, 51, 51);
+    /* 動態捲動 */
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow: auto;
+    overflow-x: hidden;
+    color: white;
+    background-color: rgb(51, 51, 51);
+}
+
+body::-webkit-scrollbar {
+    width: 7px;
+}
+
+body::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    /*滾動條外框*/
+    background: rgba(150, 150, 150, 0.9);
+    /*滾動條顏色*/
+}
+
+a {
+    color: rgb(220, 220, 220);
+    text-decoration: none;
+}
+
+a:link {
+    color: rgb(220, 220, 220);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(240, 240, 240);
+    text-decoration: underline;
+}
+
+a:active {
+    color: rgb(220, 220, 220);
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(220, 220, 220);
+    text-decoration: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-center-main {
+    justify-content: center;
+}
+
+.flex-center-cross {
+    align-items: center;
+    align-content: center;
+}
+
+.flex-direction {
+    flex-direction: column;
+}
+
+.content {
+    margin-top: 7vh;
+}
+
+.title {
+    position: relative;
+}
+
+.title:hover::after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    top: auto;
+    left: 17px;
+    height: 3px;
+    width: 32px;
+    background-color: #E4262D;
+}
+
+.title-active {
+    color: white !important;
+    position: relative;
+}
+
+.title-active::after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    top: auto;
+    left: 17px;
+    height: 3px;
+    width: 32px;
+    background-color: #E4262D;
+}
+
+.cover {
+    width: 100vw;
+    height: 120vh;
+    background-image: url('../Img/cover.jpg');
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: multiply;
+}
+
+.cover-text {
+    color: white;
+    font-weight: bolder;
+    font-size: 5vmin;
+    padding-top: 20vh;
+    padding-left: 70vw;
+}
+
+.cover-start {
+    width: 20vw;
+    padding-top: 50vh;
+    font-size: 3vmin;
+    text-align: center;
+}
+
+.cover-start-link {
+    color: rgb(200, 200, 200);
+}
+
+.cover-start-link:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.block {
+    margin-left: 1vw;
+    margin-right: 1vw;
+    padding: 1vh 1vw 1vh 1vw;
+    border-radius: 10px;
+    background-color: rgb(70, 70, 70);
+}
+
+.block div {
+    margin-bottom: 1vh;
+}
+
+.block h3 {
+    margin-top: 3vh;
+}
+
+.myHead {
+    margin-top: 2vh;
+    width: 10vmin;
+    height: 10vmin;
+    background-image: url('../Img/me.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.imgFrame {
+    width: 35vw;
+    height: 35vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.Gmap {
+    border: 0;
+    border-radius: 10px;
+}
+
+.Count-line {
+    /*類時間軸展示效果*/
+    margin-left: 3vw;
+    margin-bottom: 0 !important;
+    padding-left: 1vw;
+    padding-bottom: 3vh;
+    position: relative;
+    border-left: 2px solid rgb(150, 150, 150);
+}
+
+.Count-line::after {
+    /*類時間軸展示效果的小圓點*/
+    width: 20px;
+    height: 20px;
+    left: -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    border-radius: 50%;
+    background-color: rgb(200, 200, 200);
+    content: '';
+    color: white;
+    font-size: 0.5em;
+}
+
+.Count-line:last-child {
+    border: none;
+}
+
+.protFrame {
+    width: 100%;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.footer {
+    margin-top: 5vh;
+    padding: 1.5vh 1vw 1.5vh 1vw;
+    background-color: rgb(30, 30, 30);
+}

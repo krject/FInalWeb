@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/vue@next"></script>
+    <link rel="stylesheet" href="./lib/main.css">
+    <title>BLUZ Studio工作室</title>
+</head>
+
+<body>
+    <nav id="head" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container-fluid flex flex-center-main">
+            <div class="navbar-header">
+                <img src="./Img/LOGO.png" class="navbar-brand" />
+            </div>
+            <div class="navbar-header" v-for="(title, index) in titleAry">
+                <a class="navbar-brand title-active" :href="linkAry[index]" v-if="index === 0">{{ title }}</a>
+                <a class="navbar-brand title" :href="linkAry[index]" v-else>{{ title }}</a>
+            </div>
+        </div>
+    </nav>
+    <div class="cover">
+        <div class="cover-text">
+            <p>立即組裝你心目中的電腦</p>
+            <p>X</p>
+        </div>
+        <div class="flex flex-center-main">
+            <div class="cover-start">
+                <a href="#anchor" class="cover-start-link">
+                    <p>立即開始認識</p>
+                    <p><span class="glyphicon glyphicon-chevron-down"></span></p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="anchor" style="height: 7vh;"></div>
+    <div class="container">
+        <div class="row flex">
+            <div class="col-md-4 block">
+                <div class="flex flex-center-cross flex-direction">
+                    <div class="img img-circle myHead"></div>
+                    <div>
+                        <h4>黃冠勳</h4>
+                    </div>
+                    <div>智慧生活網路應用實驗室 專題生</div>
+                    <div>iNEMU Lab.</div>
+                    <div>&emsp;</div>
+                    <div>學如逆水行舟，不進則退</div>
+                </div>
+            </div>
+            <div class="col-md-8 block">
+                <h3>簡介</h3>
+                <h3>自我期許</h3>
+                <div class="glyphicon glyphicon-hand-right">&emsp;能夠在學習上繼續有濃厚的熱情</div><br />
+                <div class="glyphicon glyphicon-hand-right">&emsp;持續精進自己的能力</div><br />
+                <div class="glyphicon glyphicon-hand-right">&emsp;持之以恆的朝目標前進</div><br />
+                <div class="glyphicon glyphicon-hand-right">&emsp;享受每一天的生活</div>
+                <h3>聯絡方式</h3>
+                <div>Email：3A917003@gm.student.ncut.edu.tw</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row footer">
+        <div class="col-md-4 col-md-offset-2">
+            <div class="flex">
+                <div>版權宣告&emsp;</div>
+                <div>This web title icon made by&ensp;</div>
+                <a href="https://www.freepik.com" title="Freepik">Freepik&ensp;</a>
+                <div>from&ensp;</div>
+                <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+            </div>
+        </div>
+        <div class="col-md-4 col-md-offset-2">
+            <div>Copyright © 2021 krject. All rights reserved.</div>
+        </div>
+    </div>
+    <script src="./lib/main.js"></script>
+</body>
