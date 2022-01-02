@@ -34,7 +34,7 @@
                     <div class="Logo"></div>
                     <h1 style="text-align: center;">BLUZ Studio</h1>
                     <template v-for="(item, index) in menuAry">
-                        <h3 v-if="index === 0">
+                        <h3 v-if="index === 4">
                             <ol class="breadcrumb nowLink">
                                 <li>
                                     <a href="../../index.html">首頁</a>
@@ -51,14 +51,14 @@
                         </a>
                     </ul>
                 </div>
-                <div id="CPU" class="col-md-8 block">
-                    <h2 style="text-align: center;">熱門CPU推薦</h2>
+                <div id="Power" class="col-md-8 block">
+                    <h2 style="text-align: center;">熱門電源供應器推薦</h2>
                     <div class="row">
                         <div class="col-md-6" v-for="(descs, index) in descAry">
                             <div class="productFrame">
                                 <a href="#">
                                     <div class="Showcase"
-                                        :style="'background-image: url(../../Img/CPU/CPU' + (index + 1) + '.png);'">
+                                        :style="'background-image: url(../../Img/Power/power' + (index + 1) + '.png);'">
                                     </div>
                                     <h4 class="product-desc" v-for="desc in descs">{{ desc }}</h4>
                                 </a>

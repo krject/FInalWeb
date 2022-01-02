@@ -34,7 +34,7 @@ a:link {
 
 a:hover {
     color: rgb(240, 240, 240);
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 a:active {
@@ -188,6 +188,15 @@ a:visited {
     text-align: center;
 }
 
+.Showcase{
+    height: 35vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    margin-bottom: 0 !important;
+}
+
 .imgFrame {
     width: 35vw;
     height: 35vh;
@@ -199,14 +208,24 @@ a:visited {
     background-size: cover;
 }
 
-.protFrame {
-    width: 100%;
-    margin-top: 1vh;
-    margin-bottom: 1vh;
-    border-radius: 10px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+.nowLink {
+    background-color: transparent;
+    font-weight: bolder;
+}
+
+.nowLink > li > a{
+    padding-right: 7px;
+}
+
+.menu {
+    font-size: large;
+    font-weight: bolder;
+    background-color: transparent;
+}
+
+.menu:hover{
+    color: black;
+    background-color: rgb(225, 225, 225);
 }
 
 .footer {
