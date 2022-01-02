@@ -101,7 +101,7 @@ a:visited {
 
 .cover {
     width: 100vw;
-    height: 120vh;
+    height: 110vh;
     background-image: url('../Img/cover.jpg');
     background-position: left top;
     background-repeat: no-repeat;
@@ -114,13 +114,13 @@ a:visited {
     color: white;
     font-weight: bolder;
     font-size: 5vmin;
-    padding-top: 20vh;
-    padding-left: 70vw;
+    padding-top: 17vh;
+    padding-left: 5vw;
 }
 
 .cover-start {
     width: 20vw;
-    padding-top: 50vh;
+    padding-top: 55vh;
     font-size: 3vmin;
     text-align: center;
 }
@@ -134,12 +134,21 @@ a:visited {
     text-decoration: none;
 }
 
+.content-bg {
+    background-image: url('../Img/bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 3vh;
+}
+
 .block {
     margin-left: 1vw;
     margin-right: 1vw;
     padding: 1vh 1vw 1vh 1vw;
     border-radius: 10px;
-    background-color: rgb(70, 70, 70);
+    background-color: rgba(70, 70, 70, 0.6);
+
 }
 
 .block div {
@@ -150,14 +159,33 @@ a:visited {
     margin-top: 3vh;
 }
 
-.myHead {
-    margin-top: 2vh;
-    width: 10vmin;
-    height: 10vmin;
-    background-image: url('../Img/me.jpg');
+.Logo {
+    height: 20vh;
+    background-image: url('../Img/LogoW.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+.productFrame {
+    border: 1px #E54040 solid;
+    border-radius: 5px;
+}
+
+.product {
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border-radius: 5px;
+}
+
+.product-desc {
+    background-color: #E54040;
+    margin: 0;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    text-align: center;
 }
 
 .imgFrame {
@@ -171,42 +199,6 @@ a:visited {
     background-size: cover;
 }
 
-.Gmap {
-    border: 0;
-    border-radius: 10px;
-}
-
-.Count-line {
-    /*類時間軸展示效果*/
-    margin-left: 3vw;
-    margin-bottom: 0 !important;
-    padding-left: 1vw;
-    padding-bottom: 3vh;
-    position: relative;
-    border-left: 2px solid rgb(150, 150, 150);
-}
-
-.Count-line::after {
-    /*類時間軸展示效果的小圓點*/
-    width: 20px;
-    height: 20px;
-    left: -10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 0;
-    border-radius: 50%;
-    background-color: rgb(200, 200, 200);
-    content: '';
-    color: white;
-    font-size: 0.5em;
-}
-
-.Count-line:last-child {
-    border: none;
-}
-
 .protFrame {
     width: 100%;
     margin-top: 1vh;
@@ -218,7 +210,6 @@ a:visited {
 }
 
 .footer {
-    margin-top: 5vh;
     padding: 1.5vh 1vw 1.5vh 1vw;
     background-color: rgb(30, 30, 30);
 }
